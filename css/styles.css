@@ -1,10 +1,11 @@
 body {
-  font-family: Arial, Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background: #1e1e1e;
   color: #d1d5db;
+  margin: 0;
 }
 
-nav {
+.navbar {
   background: #1b5f99;
   color: #d1d5db;
   display: flex;
@@ -13,19 +14,28 @@ nav {
   padding: 20px 40px;
 }
 
-nav ul {
+.nav-links {
   display: flex;
   list-style: none;
   gap: 25px;
+  padding: 0;
+  margin: 0;
 }
 
-nav a {
+.nav-links a {
   color: white;
   text-decoration: none;
 }
 
-nav a:hover {
+.nav-links a:hover {
   text-decoration: underline;
+  transition: color 0.25s ease;
+  color: #d4ecff;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.6rem;
 }
 
 .hero {
@@ -81,7 +91,7 @@ nav a:hover {
 .cards div {
   flex: 1;
   padding: 20px;
-  border: 1 px solid #ddd;
+  border: 1px solid #ddd;
 }
 
 footer {
